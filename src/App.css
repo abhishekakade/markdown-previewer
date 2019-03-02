@@ -1,0 +1,22 @@
+.App {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.left {
+  display: inline-block;
+  width: 49%;
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid black;
+}
+
+.right {
+  display: inline-block;
+  width: 49%;
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid black;
+}
