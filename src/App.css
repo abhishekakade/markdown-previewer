@@ -2,21 +2,54 @@
   width: 100%;
   display: flex;
   align-content: center;
-  align-items: center;
+  background: #000000;
+  box-sizing: border-box;
+  /* align-items: center; */
 }
 
-.left {
+#editor {
+  box-sizing: border-box;
+  background: #ffffff;
   display: inline-block;
   width: 49%;
   padding: 10px;
   margin: 2px;
   border: 1px solid black;
+  height: auto;
 }
 
-.right {
+#preview {
+  box-sizing: border-box;
+  background: #ffffff;
   display: inline-block;
   width: 49%;
   padding: 10px;
   margin: 2px;
   border: 1px solid black;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    display: block;
+  }
+
+  #editor {
+    display: block;
+    width: calc(100% - 2px);
+    height: 50vh;
+    margin: 2px;
+    border: none;
+  }
+
+  #preview {
+    display: block;
+    /* width: 100%; */
+    width: calc(100% - 2px);
+    height: auto;
+    max-height: 49vh;
+    overflow-y: scroll;
+    margin: 2px;
+    border: none;
+  }
 }
