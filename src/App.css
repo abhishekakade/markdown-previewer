@@ -7,7 +7,7 @@
   /* align-items: center; */
 }
 
-#editor {
+.textarea-container {
   box-sizing: border-box;
   background: #ffffff;
   display: inline-block;
@@ -18,7 +18,13 @@
   height: auto;
 }
 
-#preview {
+#editor {
+  box-sizing: border-box;
+  width: 100%;
+  height: inherit;
+}
+
+.preview-container {
   box-sizing: border-box;
   background: #ffffff;
   display: inline-block;
@@ -35,6 +41,10 @@
   }
 
   #editor {
+    height: 40vh;
+  }
+
+  .textarea-container {
     display: block;
     width: calc(100% - 2px);
     height: 50vh;
@@ -42,7 +52,7 @@
     border: none;
   }
 
-  #preview {
+  .preview-container {
     display: block;
     /* width: 100%; */
     width: calc(100% - 2px);
@@ -50,6 +60,15 @@
     max-height: 49vh;
     overflow-y: scroll;
     margin: 2px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     border: none;
+  }
+
+  #editor-heading,
+  #preview-heading {
+    font-size: 1rem;
+    padding: 2px;
+    margin: 2;
   }
 }

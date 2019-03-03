@@ -111,21 +111,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <textarea
-          type="text"
-          id="editor"
-          rows="25"
-          cols="50"
-          onChange={this.onChangeHandler}
-          value={this.state.content}
-        />
+        <div className="textarea-container">
+          <h1 id="editor-heading" style={{ textAlign: "center" }}>
+            Markdown Editor
+          </h1>
+          <textarea
+            type="text"
+            id="editor"
+            rows="25"
+            cols="50"
+            onChange={this.onChangeHandler}
+            value={this.state.content}
+          />
+        </div>
 
-        <div
-          id="preview"
-          dangerouslySetInnerHTML={{ __html: markedlib(this.state.content) }}
-        >
-          {/* <h1>Previewer</h1> */}
-          {/* <div>{marked(this.state.content)}</div> */}
+        <div className="preview-container">
+          <h1 id="preview-heading" style={{ textAlign: "center" }}>
+            Markdown Preview
+          </h1>
+          <div
+            id="preview"
+            dangerouslySetInnerHTML={{ __html: markedlib(this.state.content) }}
+          >
+            {/* <div>{marked(this.state.content)}</div> */}
+          </div>
         </div>
       </div>
     );

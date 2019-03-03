@@ -7,8 +7,10 @@
     "gh-pages": "^2.0.1",
     "marked": "^0.6.1",
     "react": "^16.8.3",
+    "react-blocks-scroll-sync": "^1.1.0",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
+    "react-scroll-sync": "^0.7.0",
     "showdown": "^1.9.0"
   },
   "scripts": {
