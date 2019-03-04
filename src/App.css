@@ -40,32 +40,33 @@
   }
 
   #editor {
-    height: 40vh;
+    height: 95%;
   }
 
   .textarea-container {
     display: block;
-    width: calc(100% - 2px);
+    width: 100%;
     height: 50vh;
-    margin: 2px;
+    margin: 0;
+    margin-bottom: 2px;
     border: none;
   }
 
   .preview-container {
     display: block;
-    width: calc(100% - 2px);
+    width: 100%;
     height: auto;
-    max-height: 49vh;
+    max-height: 50vh;
     overflow-y: scroll;
-    margin: 2px;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    margin: 0;
+    margin-top: 2px;
+    padding: 0 1rem;
     border: none;
   }
 
   #editor-heading,
   #preview-heading {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 2px;
     margin: 0;
   }
