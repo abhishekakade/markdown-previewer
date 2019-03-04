@@ -2,6 +2,8 @@
 
 This project uses [Marked.js](https://marked.js.org) and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can find the live version of this poject here - [Markdown Previewer](https://abhishekakade.github.io/markdown-previewer/)
+
 ## Available Scripts
 
 In the project directory, you can run:

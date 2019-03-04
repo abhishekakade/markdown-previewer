@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-// import marked from "marked";
+
+// import { ScrollSync, ScrollSyncPane } from "react-scroll-sync";
 
 let markedlib = require("marked");
 markedlib.setOptions({
@@ -111,7 +112,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="textarea-container">
+        {/* <ScrollSync> */}
+        {/* <ScrollSyncPane> */}
+        <div
+          style={{ overflow: "auto" }}
+          className="textarea-container syncscroll"
+          name="myElements"
+        >
           <h1 id="editor-heading" style={{ textAlign: "center" }}>
             Markdown Editor
           </h1>
@@ -124,18 +131,29 @@ class App extends Component {
             value={this.state.content}
           />
         </div>
+        {/* </ScrollSyncPane> */}
 
-        <div className="preview-container">
+        {/* <ScrollSyncPane> */}
+        <div
+          style={{ overflow: "auto" }}
+          className="preview-container syncscroll"
+          name="myElements"
+        >
           <h1 id="preview-heading" style={{ textAlign: "center" }}>
             Markdown Preview
           </h1>
           <div
             id="preview"
-            dangerouslySetInnerHTML={{ __html: markedlib(this.state.content) }}
+            dangerouslySetInnerHTML={{
+              __html: markedlib(this.state.content)
+            }}
           >
             {/* <div>{marked(this.state.content)}</div> */}
           </div>
         </div>
+        {/* </ScrollSyncPane> */}
+        {/* </ScrollSync> */}
+        {/* <script src="path/to/syncscroll.js" /> */}
       </div>
     );
   }
