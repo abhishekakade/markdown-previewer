@@ -4,14 +4,13 @@
   align-content: center;
   background: #000000;
   box-sizing: border-box;
-  /* align-items: center; */
 }
 
 .textarea-container {
   box-sizing: border-box;
   background: #ffffff;
   display: inline-block;
-  width: 49%;
+  width: 50%;
   padding: 10px;
   margin: 2px;
   border: 1px solid black;
@@ -21,14 +20,14 @@
 #editor {
   box-sizing: border-box;
   width: 100%;
-  height: inherit;
+  height: 95%;
 }
 
 .preview-container {
   box-sizing: border-box;
   background: #ffffff;
   display: inline-block;
-  width: 49%;
+  width: 50%;
   padding: 10px;
   margin: 2px;
   border: 1px solid black;
@@ -54,7 +53,6 @@
 
   .preview-container {
     display: block;
-    /* width: 100%; */
     width: calc(100% - 2px);
     height: auto;
     max-height: 49vh;
@@ -69,6 +67,6 @@
   #preview-heading {
     font-size: 1rem;
     padding: 2px;
-    margin: 2;
+    margin: 0;
   }
 }

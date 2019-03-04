@@ -10,7 +10,7 @@ markedlib.setOptions({
 });
 
 let placeholderStuff = `
-# Headings
+## Headings
 # H1
 ## H2
 ### H3
@@ -20,7 +20,7 @@ let placeholderStuff = `
 
 ---
 
-# Bold, Italic, Strikethrough
+## Bold, Italic, Strikethrough
 
 Emphasis / Italics - *asterisks* or _underscores_.
 
@@ -32,7 +32,7 @@ Strikethrough - ~~Strikethrough~~
 
 ---
 
-# List Items
+## List Items
 
 1. list item
 2. more items 
@@ -51,7 +51,7 @@ Strikethrough - ~~Strikethrough~~
 
 ---
 
-# Links
+## Links
 
 [Inline link](https://www.google.com)
 
@@ -59,19 +59,19 @@ Strikethrough - ~~Strikethrough~~
 
 ---
 
-# Blockquotes
+## Blockquotes
 
 > Blockquotes can be used to quote a message/text
 
 ---
 
-# Inline Code
+## Inline Code
 
 \`some inline code\`
 
 ---
 
-# Code Block
+## Code Block
 
 \`\`\`
 
@@ -84,11 +84,11 @@ function sum(a, b) {
 
 ---
 
-# Images
+## Images
 
 ![alt-text](https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=150)
 
-# Horizontal Rule
+## Horizontal Rule
 
 ---
 ***
@@ -119,9 +119,9 @@ class App extends Component {
           className="textarea-container syncscroll"
           name="myElements"
         >
-          <h1 id="editor-heading" style={{ textAlign: "center" }}>
+          <h2 id="editor-heading" style={{ textAlign: "center" }}>
             Markdown Editor
-          </h1>
+          </h2>
           <textarea
             type="text"
             id="editor"
@@ -139,9 +139,9 @@ class App extends Component {
           className="preview-container syncscroll"
           name="myElements"
         >
-          <h1 id="preview-heading" style={{ textAlign: "center" }}>
+          <h2 id="preview-heading" style={{ textAlign: "center" }}>
             Markdown Preview
-          </h1>
+          </h2>
           <div
             id="preview"
             dangerouslySetInnerHTML={{
