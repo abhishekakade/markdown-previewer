@@ -115,21 +115,23 @@ class App extends Component {
         {/* <ScrollSync> */}
         {/* <ScrollSyncPane> */}
         <div
-          style={{ overflow: "auto" }}
+          // style={{ overflow: "auto" }}
           className="textarea-container syncscroll"
           name="myElements"
         >
-          <h2 id="editor-heading" style={{ textAlign: "center" }}>
+          <h1 id="editor-heading" style={{ textAlign: "center" }}>
             Markdown Editor
-          </h2>
-          <textarea
-            type="text"
-            id="editor"
-            rows="25"
-            cols="50"
-            onChange={this.onChangeHandler}
-            value={this.state.content}
-          />
+          </h1>
+          <label>
+            <textarea
+              type="text"
+              id="editor"
+              rows="25"
+              cols="50"
+              onChange={this.onChangeHandler}
+              value={this.state.content}
+            />
+          </label>
         </div>
         {/* </ScrollSyncPane> */}
 
@@ -139,9 +141,9 @@ class App extends Component {
           className="preview-container syncscroll"
           name="myElements"
         >
-          <h2 id="preview-heading" style={{ textAlign: "center" }}>
+          <h1 id="preview-heading" style={{ textAlign: "center" }}>
             Markdown Preview
-          </h2>
+          </h1>
           <div
             id="preview"
             dangerouslySetInnerHTML={{
