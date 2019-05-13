@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/markdown-previewer/static/css/main.fccad1db.chunk.css"
   },
   {
-    "revision": "8880551cddcb2cbb7049eab4d2f556a9",
+    "revision": "b89f21e8a2ce0acebb3567e0da2de4a2",
     "url": "/markdown-previewer/index.html"
   }
 ];
