@@ -3,12 +3,13 @@
   "name": "Markdown Previewer",
   "icons": [
     {
-      "src": "md.svg",
-      "sizes": "128x128 64x64 32x32 24x24 16x16",
-      "type": "image/svg"
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
     },
     {
-      "src": "md.svg",
+      "src": "md192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
